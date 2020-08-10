@@ -49,4 +49,16 @@ class RomanNumeralConverterTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    void givenAValueOfFiveEntered_WhenConverterIsCalled_ThenVisReturned(){
+        var number = 5;
+        var converter = new RomanNumeralConverter();
+        var expected = "V";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
 }
