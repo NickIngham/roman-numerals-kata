@@ -1,22 +1,24 @@
 package com.kata.romannumerals;
 
-import java.util.HashMap;
+
+import java.util.Map;
+import java.util.TreeMap;
 
 public class RomanNumeralConverter {
 
-    private HashMap<Integer, String> numerals;
+    private TreeMap<Integer, String> numerals;
 
     public RomanNumeralConverter() {
-        numerals = new HashMap<>();
+        numerals = new TreeMap<>();
         numerals.put(1, "I");
-        numerals.put(2, "II");
-        numerals.put(3, "III");
-        numerals.put(4, "IV");
         numerals.put(5, "V");
-
+        numerals.put(4, "IV");
     }
 
     public String convert(int number) {
-        return numerals.get(number);
+        if (number == 0) return "";
+        var entry = numerals.floorEntry(number);
+        number -= entry.getKey();
+        return entry.getValue() + convert(number);
     }
 }

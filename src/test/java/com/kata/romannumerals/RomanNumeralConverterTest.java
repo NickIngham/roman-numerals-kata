@@ -61,4 +61,15 @@ class RomanNumeralConverterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void givenAValueOfFourEntered_WhenConverterIsCalled_ThenVIisReturned(){
+        var number = 6;
+        var converter = new RomanNumeralConverter();
+        var expected = "VI";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
 }
