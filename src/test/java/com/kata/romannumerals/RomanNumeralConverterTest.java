@@ -9,21 +9,32 @@ class RomanNumeralConverterTest {
     @Test
     void givenAValueOfOneEntered_WhenConverterIsCalled_ThenIisReturned(){
         var number = 1;
-        var converter = new RomanNumralConverter();
+        var converter = new RomanNumeralConverter();
         var expected = "I";
 
-        var result = converter.convert(1);
+        var result = converter.convert(number);
 
         assertEquals(expected, result);
     }
 
     @Test
     void givenAValueOfTwoEntered_WhenConverterIsCalled_ThenIIisReturned(){
-        var number = 1;
-        var converter = new RomanNumralConverter();
+        var number = 2;
+        var converter = new RomanNumeralConverter();
         var expected = "II";
 
-        var result = converter.convert(2);
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void givenAValueOfThreeEntered_WhenConverterIsCalled_ThenIIIisReturned(){
+        var number = 3;
+        var converter = new RomanNumeralConverter();
+        var expected = "III";
+
+        var result = converter.convert(number);
 
         assertEquals(expected, result);
     }
