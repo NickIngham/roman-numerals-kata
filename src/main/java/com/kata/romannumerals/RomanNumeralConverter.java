@@ -19,6 +19,7 @@ public class RomanNumeralConverter {
         numerals.put(400, "CD");
         numerals.put(500, "D");
         numerals.put(900, "CM");
+        numerals.put(1000, "M");
     }
 
     public String convert(int number) {
