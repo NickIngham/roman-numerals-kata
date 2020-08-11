@@ -134,4 +134,14 @@ class RomanNumeralConverterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void givenAValueOfFourHundredEntered_WhenConverterIsCalled_ThenDisReturned(){
+        var number = 400;
+        var expected = "D";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
 }
