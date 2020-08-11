@@ -114,4 +114,14 @@ class RomanNumeralConverterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void givenAValueOfNinetyEntered_WhenConverterIsCalled_ThenXCisReturned(){
+        var number = 90;
+        var expected = "XC";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
 }
