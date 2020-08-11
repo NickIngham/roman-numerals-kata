@@ -154,4 +154,14 @@ class RomanNumeralConverterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void givenAValueOfNineHundredEntered_WhenConverterIsCalled_ThenCMisReturned(){
+        var number = 900;
+        var expected = "CM";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
 }
