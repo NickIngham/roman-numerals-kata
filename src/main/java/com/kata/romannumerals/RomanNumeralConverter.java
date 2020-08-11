@@ -15,6 +15,7 @@ public class RomanNumeralConverter {
         numerals.put(40, "XL");
         numerals.put(50, "L");
         numerals.put(90, "XC");
+        numerals.put(100, "C");
     }
 
     public String convert(int number) {
