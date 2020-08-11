@@ -135,8 +135,18 @@ class RomanNumeralConverterTest {
     }
 
     @Test
-    void givenAValueOfFourHundredEntered_WhenConverterIsCalled_ThenDisReturned(){
+    void givenAValueOfFourHundredEntered_WhenConverterIsCalled_ThenCDisReturned(){
         var number = 400;
+        var expected = "CD";
+
+        var result = converter.convert(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void givenAValueOfFiveHundredEntered_WhenConverterIsCalled_ThenDisReturned(){
+        var number = 500;
         var expected = "D";
 
         var result = converter.convert(number);
