@@ -1,7 +1,4 @@
 package com.kata.romannumerals;
-
-
-import java.util.Map;
 import java.util.TreeMap;
 
 public class RomanNumeralConverter {
@@ -13,6 +10,7 @@ public class RomanNumeralConverter {
         numerals.put(1, "I");
         numerals.put(5, "V");
         numerals.put(4, "IV");
+        numerals.put(9, "IX");
     }
 
     public String convert(int number) {
